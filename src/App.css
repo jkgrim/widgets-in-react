@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  text-align: center;
+}
+
+.dice-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.dice-1,
+.dice-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  margin: 8px;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 2px 2px 6px;
+}
