@@ -6,6 +6,8 @@ import Home from "./pages/Home";
 import DiceRoll from "./pages/DiceRoll";
 import CoinFlip from "./pages/CoinFlip";
 import Greeting from "./pages/Greeting";
+import TipCalculator from "./pages/TipCalculator";
+import SecretPhrase from "./pages/SecretPhrase";
 
 function App() {
   return (
@@ -18,14 +20,10 @@ function App() {
           <Route path="/coinflip" component={CoinFlip} />
           <Route path="/diceroll" component={DiceRoll} />
           <Route path="/greeting" component={Greeting} />
+          <Route path="/tip-calculator" component={TipCalculator} />
+          <Route path="/secret-phrase" component={SecretPhrase} />
         </Switch>
       </Router>
-
-      {/* 
-      add 2 numbers 
-      greeter (first name, last name, greet button with alert "hello -fname -lname")
-      search filter
-      */}
     </div>
   );
 }

@@ -20,6 +20,14 @@ export default function NavBar() {
       <div>
         <NavLink to="/greeting">Greeting</NavLink>
       </div>
+
+      <div>
+        <NavLink to="/tip-calculator">Tip Calculator</NavLink>
+      </div>
+
+      <div>
+        <NavLink to="/secret-phrase">Secret Phrase</NavLink>
+      </div>
     </div>
   );
 }
