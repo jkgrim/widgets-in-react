@@ -26,8 +26,9 @@ export default function DiceRoll() {
         <h2 className="dice-1">{num}</h2>
         <h2 className="dice-2">{num2}</h2>
       </div>
-      <button onClick={handleClick}>Roll the Dice</button>
-      <hr />
+      <button className="dice-button" onClick={handleClick}>
+        Roll the Dice
+      </button>
     </div>
   );
 }

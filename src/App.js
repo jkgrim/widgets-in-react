@@ -1,10 +1,25 @@
+import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
+
 import "./App.css";
-import DiceRoll from "./components/DiceRoll";
+import NavBar from "./navigation/NavBar";
+import Home from "./pages/Home";
+import DiceRoll from "./pages/DiceRoll";
+import CoinFlip from "./pages/CoinFlip";
+import Greeting from "./pages/Greeting";
 
 function App() {
   return (
     <div className="App">
-      <DiceRoll />
+      <Router>
+        <Route path="*" component={NavBar} />
+
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/coinflip" component={CoinFlip} />
+          <Route path="/diceroll" component={DiceRoll} />
+          <Route path="/greeting" component={Greeting} />
+        </Switch>
+      </Router>
 
       {/* 
       add 2 numbers 
