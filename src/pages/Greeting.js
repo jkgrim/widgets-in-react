@@ -18,7 +18,7 @@ export default function Greeting() {
   }
 
   return (
-    <div>
+    <div className="greeting-container">
       <h1>{`Hello ${
         firstName && firstName[0].toUpperCase() + firstName.slice(1)
       } ${lastName && lastName[0].toUpperCase() + lastName.slice(1)}`}</h1>
@@ -27,10 +27,11 @@ export default function Greeting() {
         <input placeholder="First Name" type="text" name="fname" />
         <input placeholder="Last Name" type="text" name="lname" />
 
-        <button>Click Me!</button>
+        <button className="submit">Click Me!</button>
+        <button className="clear" onClick={clearForm}>
+          Clear
+        </button>
       </form>
-
-      <button onClick={clearForm}>Clear</button>
     </div>
   );
 }
