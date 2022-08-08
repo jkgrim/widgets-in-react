@@ -28,6 +28,14 @@ export default function NavBar() {
       <div>
         <NavLink to="/secret-phrase">Secret Phrase</NavLink>
       </div>
+
+      <div>
+        <NavLink to="/pizza-builder">Pizza Builder</NavLink>
+      </div>
+
+      <div>
+        <NavLink to="/box-shadow-generator">Box Shadow</NavLink>
+      </div>
     </div>
   );
 }

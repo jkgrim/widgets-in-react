@@ -14,10 +14,12 @@ export default function SecretPhrase() {
   }
 
   return (
-    <div>
-      <h1>What's the Secret Phrase?</h1>
-      <input type="text" onChange={handleChange} />
-      <div>HINT: It's "Star Wars"</div>
+    <div className="phrase-container">
+      <div className="phrase-wrapper">
+        <h1>What's the Secret Phrase?</h1>
+        <input type="text" onChange={handleChange} />
+        <div className="hint">HINT: It's "Star Wars"</div>
+      </div>
     </div>
   );
 }

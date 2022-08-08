@@ -8,6 +8,8 @@ import CoinFlip from "./pages/CoinFlip";
 import Greeting from "./pages/Greeting";
 import TipCalculator from "./pages/TipCalculator";
 import SecretPhrase from "./pages/SecretPhrase";
+import PizzaBuilder from "./pages/PizzaBuilder";
+import BoxShadow from "./pages/BoxShadow";
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
           <Route path="/greeting" component={Greeting} />
           <Route path="/tip-calculator" component={TipCalculator} />
           <Route path="/secret-phrase" component={SecretPhrase} />
+          <Route path="/pizza-builder" component={PizzaBuilder} />
+          <Route path="/box-shadow-generator" component={BoxShadow} />
         </Switch>
       </Router>
     </div>
