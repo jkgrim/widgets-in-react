@@ -10,6 +10,7 @@ import TipCalculator from "./pages/TipCalculator";
 import SecretPhrase from "./pages/SecretPhrase";
 import PizzaBuilder from "./pages/PizzaBuilder";
 import BoxShadow from "./pages/BoxShadow";
+import NoMatch from "./pages/NoMatch";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path="/secret-phrase" component={SecretPhrase} />
           <Route path="/pizza-builder" component={PizzaBuilder} />
           <Route path="/box-shadow-generator" component={BoxShadow} />
+          <Route component={NoMatch} />
         </Switch>
       </Router>
     </div>
